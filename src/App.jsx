@@ -4,6 +4,7 @@ import {
   fetchData, filterStopsByRouteId, calculateDistances,
   filterTripsByRouteId, getRelevantStopTimes, filterStopTimesByTimeRange
 } from './utils/helpers';
+import { RouteChart } from './components'
 import { setTrips, setStops, setStopTimes, setLoadingStatus, setRoutes } from './store/routeChartSlice'
 import { ROUTE_ID_NAME_MAPPING, START_TIME, END_TIME } from './utils/constants';
 
@@ -58,8 +59,21 @@ function App() {
   }
 
   return (
-    <>
-    </>
+    <div className="App">
+      {loading ? (
+        <p>Loading...</p>
+      ) : routes ? (
+        Object.keys(routes).map(routeId => (
+          <RouteChart
+            key={routeId}
+            routeId={routeId}
+            routes={routes}
+          />
+        ))
+      ) : (
+        <p>Error loading data</p>
+      )}
+    </div>
   )
 }
 
