@@ -65,8 +65,8 @@ const RouteChart = ({ routeId, routes }) => {
   }, [routeId, routes, ROUTE_ID_NAME_MAPPING]);
 
   return (
-    <div key={`chart_${routeId}`}>
-      <h2>Fahrplan - {ROUTE_ID_NAME_MAPPING[routeId]}</h2>
+    <div key={`chart_${routeId}`} className="bg-gray-800 text-white p-4 rounded-lg shadow-lg mb-10">
+      <h2 className="text-xl font-bold mb-4">Fahrplan - {ROUTE_ID_NAME_MAPPING[routeId]}</h2>
       <canvas id={`stopTimesChart_${routeId}`} width="800" height="800"></canvas>
     </div>
   );

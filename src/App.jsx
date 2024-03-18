@@ -59,7 +59,7 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="App bg-gray-900 text-white min-h-screen p-8">
       {loading ? (
         <p>Loading...</p>
       ) : routes ? (
