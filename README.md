@@ -2,6 +2,8 @@
 
 This project is a small React application for visualizing a graphical time schedule for trains using schedule data for Stuttgart. It shows users to filter data for a specific time slot and visualize the distance between stops.
 
+![alt text](image.png)
+
 ## Deployment
 
 The deployed version of the BildFahrplan app can be accessed at [https://bildfahrplan-three.vercel.app/](https://bildfahrplan-three.vercel.app/).
