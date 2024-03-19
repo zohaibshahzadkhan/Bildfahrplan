@@ -2,6 +2,11 @@
 
 This project is a small React application for visualizing a graphical time schedule for trains using schedule data for Stuttgart. It shows users to filter data for a specific time slot and visualize the distance between stops.
 
+## Deployment
+
+The deployed version of the BildFahrplan app can be accessed at [https://bildfahrplan-three.vercel.app/](https://bildfahrplan-three.vercel.app/).
+
+
 ## Steps to Solve the Task
 
 ### 1. Data Collection
@@ -73,5 +78,19 @@ git clone https://github.com/zohaibshahzadkhan/Bildfahrplan
 - Tailwindcss
 - Jest
 - Chartjs
+
+## Known Issues
+
+### Scaling of Graph with Time Data on Y-Axis
+
+The current implementation lacks proper scaling of the graph with time data on the y-axis. This can lead to inaccuracies in visualizing the departure times of trains throughout the day. 
+
+### Calculating Exact Distance for Accurate Points on X-Axis
+
+Another issue is the calculation of the exact distance between stops for plotting accurate points on the x-axis. The current approach may not provide precise distances, affecting the visualization's accuracy.
+
+These issues need to be addressed to improve the overall functionality and accuracy of the application.
+
+
 
   
