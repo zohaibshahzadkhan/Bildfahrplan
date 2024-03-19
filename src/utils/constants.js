@@ -17,5 +17,5 @@ export const ROUTE_ID_NAME_MAPPING = {
 export const START_TIME = '06:00:00';
 
 // Ending time for filtering stop times
-export const END_TIME = '12:00:00';
+export const END_TIME = '08:00:00';
 
